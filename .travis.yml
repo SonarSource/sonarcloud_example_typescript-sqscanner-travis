@@ -13,7 +13,7 @@ install:
   - npm install
 
 script:
-  - npm run analyze
+  - npm run test && npm run tslint && sonar-scanner
 
 cache:
   directories:
