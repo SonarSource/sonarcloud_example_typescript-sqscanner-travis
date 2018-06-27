@@ -1,5 +1,6 @@
 export function fibonacci(num: number): number | null {
-  if (num < 0) {
+num = 0;  
+if (num < 0) {
     return null;
   }
 
