@@ -18,3 +18,10 @@ script:
 cache:
   directories:
     - '$HOME/.sonar/cache'
+
+# Don't copy the following part if you're using this project as a starting point of yours
+notifications:
+  email: false
+  webhooks:
+    - secure: "Kz717m4p/AX4RWZxdXW2N+JqNLtdCj1X6Y5CI4tmiWGgxdTBU5lFAQ905dbzku5Hsx6AJdu+b+PpX8ixjkRFDX+CkQ//W5IRUojciLojC5eVRmzYgbhLjmpZmYdc3UvcLTKyHCJLY5GGJ1O0TxjapSJ+1Mp1T1wYsyvcAF55HdFHHOZCy8JIuHQBZmMruMeFDTwmS41cJwqm1fAmKzRESP22fs+njFbsOUVVqiTr0VqxH3h2JJxr5BoLwl17Y8VZ+VYTvPcilAEPeAGhTec6JeEO5SAfuv/6ji2SnCrX29YSt7c20jPAALEPEA3XKepJJPfl+liftbO6mHBobox7z8mx/UyDNqq5e39IShDPzfV2COfb9n/LJc/gxzPYwF1tj8g+V8ArxPqKTv3q9w1A0NVBHGKUlR9/f+WvPoyywT0BApJEOCpk3nSGPuCJC2sR8jSOxZbRgqfLRaZbwZab66+MU3NDqomKBSI49W4WgwWjJ4THkK1wN0f4Z8RWzLt+2Dald5LJmxA1A69piMSKAmqN37kYb6g06DnWlC2SyrUVPrZXrNXdE1NviX/KI+qxEzY3AxXzGjmAgcisuNSEBz2cS/JiotcQQvtlMaELLm0EaHqzaB0oI5sM8gISuWbB6PSSfdrDZouhn8azQti2e0HeWHwuhA18aDOLN3a22xE="
+  on_start: always
