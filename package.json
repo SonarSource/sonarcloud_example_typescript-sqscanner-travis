@@ -16,5 +16,8 @@
     "ts-jest": "^25.0.0",
     "tslint": "^6.0.0",
     "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/jest": "^25.1.0"
   }
 }

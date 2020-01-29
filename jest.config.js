@@ -4,7 +4,6 @@ module.exports = {
       skipBabel: true,
     },
   },
-  mapCoverage: true,
   moduleFileExtensions: ["js", "ts"],
   testResultsProcessor: "jest-sonar-reporter",
   transform: {
