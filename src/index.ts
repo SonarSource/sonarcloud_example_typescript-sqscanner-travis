@@ -15,3 +15,4 @@ export function fibonacci(num: number): number | null {
 
   return b;
 }
+
