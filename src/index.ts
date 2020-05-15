@@ -1,4 +1,5 @@
 export function fibonacci(num: number): number | null {
+  console.log("Hello");
   if (num < 0) {
     return null;
   }
