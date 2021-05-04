@@ -1,0 +1,14 @@
+name: Test checks
+on:
+  check_run:
+    type: [completed]
+  check_suite:
+    type: [completed]
+
+jobs:
+  test-check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo ${{ github.event_name }}
+          echo ${{ github.event }}
