@@ -1,11 +1,19 @@
 name: Test checks
 on:
-  check_suite:
-    type: [completed]
+  check_run:
+    types: [rerequested, completed]
+
+  workflow_dispatch:
+
 jobs:
-  test-check:
+  build-deploy-dev:
+    # If Quality Gate is green
+    if: >-
+      github.event.check_run.app.name == 'SonarCloud'
+      && github.event.check_run.name == 'SonarCloud Code Analysis' 
+      && github.event.check_run.conclusion == 'success'
+    name: Dev
     runs-on: ubuntu-latest
+    environment: 'dev'
     steps:
-      - run: |
-          echo ${{ github.event_name }}
-          cat ${{ github.event_path }}
+      - run: cat ${{ github.event_path }}
