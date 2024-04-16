@@ -3,12 +3,17 @@ language: node_js
 node_js:
   - "16"
 
+dist: jammy
+
+env:
+  - JAVA_HOME=/usr/local/lib/jvm/openjdk17
+
 addons:
   sonarcloud:
     organization: "sonarcloud"
     token:
       secure: "fcrKXcKv1xwSOLs0cqRg9xA0wUqpe4aJ+t/FymmTxkewJeeA3yyk0AqqQKRvRxWOV+875ED33TWo2mCT+91+IatNTIt6ZDk+gwIfGDdqCPW2+WHScuI3KnlXEg+RFplpPtRUn8sg7JMcccH6rDF4VURop4RpEeyq4USkGLjdghowfdDpG5b7RVLbRaUoJV3Fsezq0phReKfO1ugDqZ38M1h8W+zCXlBqauC5tE+C28vpwqPgSWjh8mwcy7R8u61Tzx1hBMVwQVWNnyLO/Z9kCnFX5VmIAuIu9DWOm3hOK21OGOLj0TWIjDf8m1YeN2+5Fszj0nljasVWh1GovOqEbQdxyLSPhkSeS/isaCni7aN3xeBdbN/Xqe1UVzYD3BtEOyZwYe0ywzJZZoxrfkrT1lsaViJyoi59m75NCsgNNq9p53Yevj6Li/MrtdtyOvpF3IjjjnKoiZfWFRejXFt45AlaAOv894b3OO98L+nLlHBiBuqt94anGdFL4HmjB8DVG7H5WfyKP5EtYcrs7VSjTTk0KSfMg+f4QDRrapZZydtH8M4rpA5oEUpsfLzRanIoC0jKbidd2FXcJ7dOkOyLxxSWm6bOckgtGWUwX66NGSU3hqx2Kmsee+EuXF0Tkqau1/dqpuQLIErKfKbnM80uf2PurTkDmqSZeITy6YoAZr8="
-      
+
 install:
   - npm install
 
@@ -17,7 +22,7 @@ script:
 
 cache:
   directories:
-    - '$HOME/.sonar/cache'
+    - "$HOME/.sonar/cache"
 
 # Don't copy the following part if you're using this project as a starting point of yours
 notifications:
