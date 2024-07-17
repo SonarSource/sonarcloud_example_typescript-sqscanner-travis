@@ -8,7 +8,7 @@
     "test": "jest --coverage",
     "tslint": "tslint -t json -o tslint-report.json --project . --force"
   },
-  "author": "",
+  "author": "test",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0",
